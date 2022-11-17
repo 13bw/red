@@ -46,7 +46,7 @@ def alligatorSearch(pesquisa):
             }
         )
     
-    saveData(alligatorData, "output/alligator.csv")
+    saveData(alligatorData, "alligator.csv")
     return alligatorData[0:3]
         
 
@@ -77,7 +77,7 @@ def kalungaSearch(pesquisa):
             "preco": precoproduto,
             "imagem": imgproduto
         })
-    saveData(kalungaData, "output/kalunga.csv")
+    saveData(kalungaData, "kalunga.csv")
     return kalungaData[0:3]
 
 
@@ -112,7 +112,7 @@ def amazonSearch(pesquisa):
                 }
             )
 
-    saveData(amazonData, "output/amazon.csv")
+    saveData(amazonData, "amazon.csv")
     return amazonData
 
 
@@ -133,4 +133,4 @@ def search(msg):
 
 
 webbrowser.open("http://localhost:5000")
-io.run(app, debug=True)
+io.run(app)
